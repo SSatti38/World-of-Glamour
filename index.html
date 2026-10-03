@@ -214,6 +214,269 @@
         .payment-method:hover {
             transform: scale(1.1);
         }
+
+        /* World of Glamour visual refresh */
+        :root {
+            color-scheme: dark;
+            --surface: #101827;
+            --surface-raised: #151f31;
+            --surface-edge: rgba(164, 188, 226, 0.14);
+            --text-muted: #aebbd0;
+            --sapphire: #4b8dff;
+            --cyan: #5bd7e8;
+            --violet: #a88bff;
+            scroll-behavior: smooth;
+        }
+
+        body.bg-dark-900 {
+            background:
+                radial-gradient(ellipse at 14% 2%, rgba(37, 87, 161, 0.2), transparent 34rem),
+                radial-gradient(ellipse at 88% 24%, rgba(91, 74, 165, 0.13), transparent 30rem),
+                #0a101a;
+            color: #f4f7fc;
+            line-height: 1.65;
+        }
+
+        body > .fixed.inset-0 {
+            background: #0a101a;
+        }
+
+        body > .fixed.inset-0 > div:first-child {
+            background-image: linear-gradient(135deg, #101b2c, #12152a 55%, #0b1422);
+        }
+
+        ::selection {
+            color: #fff;
+            background: rgba(75, 141, 255, 0.55);
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--cyan);
+            outline-offset: 3px;
+            border-radius: 0.35rem;
+        }
+
+        a,
+        button,
+        input,
+        .product-card,
+        .hover-scale,
+        .payment-method {
+            transition-duration: 220ms;
+            transition-timing-function: ease;
+        }
+
+        a:hover {
+            color: #8fe8f2;
+        }
+
+        .logo {
+            background-image: linear-gradient(100deg, #80dcf4 0%, #8daeff 48%, #b89bff 100%);
+            letter-spacing: 0.045em;
+        }
+
+        #navbar {
+            background-color: rgba(9, 15, 25, 0.86);
+            border-color: rgba(164, 188, 226, 0.14);
+            box-shadow: 0 12px 36px rgba(1, 7, 16, 0.22);
+        }
+
+        #navbar a,
+        #navbar button {
+            text-decoration: none;
+        }
+
+        #navbar a:hover,
+        #navbar button:hover {
+            color: #8fe8f2;
+        }
+
+        #searchInput,
+        input[type="email"],
+        #chatbotInput {
+            background-color: rgba(16, 25, 40, 0.92);
+            border-color: rgba(164, 188, 226, 0.2);
+            color: #f4f7fc;
+        }
+
+        #searchInput:focus,
+        input[type="email"]:focus,
+        #chatbotInput:focus {
+            border-color: rgba(91, 215, 232, 0.7);
+            box-shadow: 0 0 0 3px rgba(91, 215, 232, 0.14);
+        }
+
+        body > div.relative.h-screen > img {
+            filter: saturate(0.82) brightness(0.82);
+        }
+
+        body > div.relative.h-screen > .bg-black.bg-opacity-40 {
+            background: linear-gradient(90deg, rgba(5, 10, 18, 0.77), rgba(7, 12, 21, 0.28) 72%),
+                linear-gradient(0deg, rgba(8, 13, 22, 0.5), transparent 58%);
+        }
+
+        body > div.relative.h-screen .bg-gray-900.bg-opacity-60 {
+            background: rgba(12, 20, 33, 0.72);
+            border-color: rgba(184, 206, 239, 0.2);
+            box-shadow: 0 24px 70px rgba(2, 8, 18, 0.32), 0 0 45px rgba(75, 141, 255, 0.1);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            letter-spacing: -0.025em;
+        }
+
+        h1 {
+            line-height: 1.12;
+            text-shadow: 0 2px 24px rgba(4, 10, 20, 0.36);
+        }
+
+        section.bg-dark-900,
+        footer.bg-dark-900 {
+            background-color: #0b121e;
+        }
+
+        section.bg-dark-800,
+        footer.bg-dark-800 {
+            background-color: #101a29;
+        }
+
+        section.bg-gradient-to-b {
+            background-image: linear-gradient(180deg, #0b121e 0%, #111c2b 100%);
+        }
+
+        .text-gray-400 {
+            color: var(--text-muted);
+        }
+
+        .text-gray-300 {
+            color: #c8d2e2;
+        }
+
+        .product-card,
+        section#contact .bg-gray-900.bg-opacity-50,
+        .grid > .bg-gray-900.bg-opacity-50 {
+            background: linear-gradient(145deg, rgba(22, 33, 51, 0.94), rgba(15, 24, 39, 0.96));
+            border-color: var(--surface-edge);
+            box-shadow: 0 14px 38px rgba(2, 8, 18, 0.16);
+        }
+
+        .product-card:hover,
+        .hover-scale:hover {
+            transform: translateY(-4px);
+            border-color: rgba(91, 215, 232, 0.3);
+            box-shadow: 0 20px 42px rgba(2, 8, 18, 0.3), 0 0 28px rgba(75, 141, 255, 0.12);
+        }
+
+        .product-image,
+        .collection-image {
+            transition: transform 420ms ease, filter 420ms ease;
+        }
+
+        .product-card:hover .product-image,
+        .hover-scale:hover .collection-image {
+            transform: scale(1.035);
+            filter: saturate(1.04);
+        }
+
+        button.bg-purple-600,
+        a.bg-purple-600,
+        #cartCount {
+            background-color: #386fce;
+        }
+
+        button[class*="from-purple-600"],
+        button[class*="from-purple-"] {
+            background-image: linear-gradient(105deg, #356cc7, #6754bd 68%, #7960c7);
+            box-shadow: 0 8px 24px rgba(75, 113, 214, 0.18);
+        }
+
+        button[class*="from-purple-600"]:hover,
+        button[class*="from-purple-"]:hover {
+            filter: brightness(1.12);
+            box-shadow: 0 10px 28px rgba(75, 141, 255, 0.28);
+        }
+
+        button.bg-purple-600:hover,
+        a.bg-purple-600:hover {
+            background-color: #4a83e3;
+        }
+
+        .relative.h-96 button {
+            color: #eef5ff;
+            background: rgba(19, 30, 47, 0.78);
+            border: 1px solid rgba(200, 220, 250, 0.28);
+            backdrop-filter: blur(8px);
+        }
+
+        .relative.h-96 button:hover {
+            background: rgba(49, 96, 168, 0.88);
+            border-color: rgba(143, 232, 242, 0.55);
+        }
+
+        .gradient-text {
+            background-image: linear-gradient(95deg, #7cdded, #82aaff 55%, #b699ff);
+        }
+
+        .radiant-text {
+            animation: none;
+            text-shadow: none;
+        }
+
+        .glass-effect,
+        .promo-glass {
+            background: rgba(10, 17, 28, 0.78);
+            border-color: rgba(164, 188, 226, 0.16);
+            box-shadow: 0 8px 28px rgba(2, 8, 18, 0.2);
+        }
+
+        #searchResults,
+        #chatbotWindow,
+        #cartSidebar {
+            background-color: rgba(15, 24, 39, 0.97);
+            border-color: var(--surface-edge);
+            box-shadow: 0 22px 60px rgba(1, 6, 14, 0.42);
+        }
+
+        #chatbotWindow > div:first-child {
+            background-color: #111d2e;
+        }
+
+        #chatbotMessages .bg-gray-700 {
+            background-color: #202e43;
+        }
+
+        #chatbotToggle {
+            box-shadow: 0 12px 32px rgba(75, 113, 214, 0.32);
+        }
+
+        @media (max-width: 640px) {
+            body > div.relative.h-screen h1 {
+                font-size: clamp(2.4rem, 10vw, 3.2rem);
+            }
+
+            #chatbotWindow {
+                width: min(24rem, calc(100vw - 2rem));
+                right: 1rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            :root {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-dark-900 text-gray-100">
